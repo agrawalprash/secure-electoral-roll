@@ -1,0 +1,26 @@
+Benchmarking for n=100
+ main
+ registration time: 6.5 s
+ prepareER
+     mix-server 0: generating shuffle and proofs of shuffle time: 0.98 s
+     mix-server 1: generating shuffle and proofs of shuffle time: 0.98 s
+     mix-server 2: generating shuffle and proofs of shuffle time: 0.97 s
+     mix-server 3: generating shuffle and proofs of shuffle time: 0.98 s
+     mix-server 0: partial decryption of vid and j time: 0.12 s
+     mix-server 1: partial decryption of vid and j time: 0.12 s
+     mix-server 2: partial decryption of vid and j time: 0.12 s
+     mix-server 3: partial decryption of vid and j time: 0.12 s
+     mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.00094 s
+     mix-server 0 total time: 1.1 s
+ prepareER time: 6.5 s
+ univaudit_prepareER
+     auditor: verifying proofs of shuffle by mix-server 0 time: 1.0 s
+     auditor: verifying proofs of shuffle by mix-server 1 time: 1.0 s
+     auditor: verifying proofs of shuffle by mix-server 2 time: 1.0 s
+     auditor: verifying proofs of shuffle by mix-server 3 time: 1.0 s
+     auditor: verifying partial decryptions by mix-server 0 time: 0.048 s
+     auditor: verifying partial decryptions by mix-server 1 time: 0.049 s
+     auditor: verifying partial decryptions by mix-server 2 time: 0.048 s
+     auditor: verifying partial decryptions by mix-server 3 time: 0.048 s
+     auditor total time: 4.2 s
+ univaudit_prepareER time: 4.2 s

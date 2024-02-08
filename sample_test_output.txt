@@ -1,0 +1,102 @@
+Testing...
+IndRAudit passed for Accept receipt for beta=0.
+IndRAudit passed for Accept receipt for beta=1.
+IndRAudit passed for Accept receipt for beta=2.
+Accept receipt size estimate: 
+        Accept registration receipt size estimate: 
+        - 4 ZR elements per ciphertext (x7)         = 28 ZR elements
+        - 5 ZR elements for uid, rp, vid, j and ed  =  5 ZR elements
+        - 2 ZR elements for rhoenc1                 =  2 ZR elements
+        - 2 ZR elements per rhoenc2 component (x3)  =  6 ZR elements
+        - 2 ZR elements per rhoeq1 component  (x3)  =  6 ZR elements
+        - 2 ZR elements per rhoeq1 component  (x3)  =  6 ZR elements
+        TOTAL                                       = 53 ZR elements.
+
+        Assuming an elliptic curve where order q ~ 250 bits, each ZR element
+        takes 250 bits, so the overall size requirement is 13250 bits ~ 1.65 KB,
+        which can fit within standard QR codes.
+        
+        All other receipts are smaller.
+    
+IndRAudit passed for Reject receipt.
+IndRAudit passed for DupReg receipt.
+UnivAudit's ERR audit steps passed.
+ main
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.035 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.035 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.036 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.035 s
+ mix-server 0: partial decryption of vid and j time: 0.0051 s
+ mix-server 1: partial decryption of vid and j time: 0.0051 s
+ mix-server 2: partial decryption of vid and j time: 0.005 s
+ mix-server 3: partial decryption of vid and j time: 0.005 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000059 s
+ auditor: verifying proofs of shuffle by mix-server 0 time: 0.051 s
+ auditor: verifying proofs of shuffle by mix-server 1 time: 0.052 s
+ auditor: verifying proofs of shuffle by mix-server 2 time: 0.052 s
+ auditor: verifying proofs of shuffle by mix-server 3 time: 0.052 s
+ auditor: verifying partial decryptions by mix-server 0 time: 0.0038 s
+ auditor: verifying partial decryptions by mix-server 1 time: 0.0039 s
+ auditor: verifying partial decryptions by mix-server 2 time: 0.0038 s
+ auditor: verifying partial decryptions by mix-server 3 time: 0.0038 s
+UnivAudit's prepareER audit steps passed.
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 0: partial decryption of vid and j time: 0.0031 s
+ mix-server 1: partial decryption of vid and j time: 0.003 s
+ mix-server 2: partial decryption of vid and j time: 0.003 s
+ mix-server 3: partial decryption of vid and j time: 0.003 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000025 s
+IndCAudit passed for Accept receipt for an eligible voter.
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 0: partial decryption of vid and j time: 0.003 s
+ mix-server 1: partial decryption of vid and j time: 0.003 s
+ mix-server 2: partial decryption of vid and j time: 0.003 s
+ mix-server 3: partial decryption of vid and j time: 0.003 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000025 s
+IndCAudit passed for Reject receipt for an ineligible voter.
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 0: partial decryption of vid and j time: 0.003 s
+ mix-server 1: partial decryption of vid and j time: 0.0029 s
+ mix-server 2: partial decryption of vid and j time: 0.0029 s
+ mix-server 3: partial decryption of vid and j time: 0.0029 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000026 s
+IndCAudit passed for DupCast receipt for an eligible voter casting twice.
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.018 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 0: partial decryption of vid and j time: 0.003 s
+ mix-server 1: partial decryption of vid and j time: 0.0031 s
+ mix-server 2: partial decryption of vid and j time: 0.003 s
+ mix-server 3: partial decryption of vid and j time: 0.003 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000024 s
+IndCAudit passed for Reject receipt for a voter using someone else's vid.
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.019 s
+ mix-server 0: partial decryption of vid and j time: 0.0031 s
+ mix-server 1: partial decryption of vid and j time: 0.003 s
+ mix-server 2: partial decryption of vid and j time: 0.003 s
+ mix-server 3: partial decryption of vid and j time: 0.003 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000029 s
+IndCAudit passed for Reject receipt for a voter using unknown vid.
+ mix-server 0: generating shuffle and proofs of shuffle time: 0.053 s
+ mix-server 1: generating shuffle and proofs of shuffle time: 0.052 s
+ mix-server 2: generating shuffle and proofs of shuffle time: 0.052 s
+ mix-server 3: generating shuffle and proofs of shuffle time: 0.053 s
+ mix-server 0: partial decryption of vid and j time: 0.0073 s
+ mix-server 1: partial decryption of vid and j time: 0.0072 s
+ mix-server 2: partial decryption of vid and j time: 0.0072 s
+ mix-server 3: partial decryption of vid and j time: 0.0072 s
+ mix-server 0,1,2,3: combining partial decryptions of vid and j time: 0.000058 s
+UnivAudit's ER audit steps passed.
